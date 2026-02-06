@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+header img {
+    height: 50px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    color: white;
+    height: 500px;
+}
+
+.main h2 {
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.main p {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.main button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+}
+
+#catalog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#catalog h2 {
+    font-size: 35px;
+    margin: 20px;
+}
+
+#catalog div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+    width: 400px;
+}
+
+#catalog article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 5px 10px #00000025;
+    border-radius: 20px;
+}
+
+#catalog article h3 {
+    margin: 10px;
+    font-size: 25px;
+}
+
+#catalog article p {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 300px;
+    font-size: 20px;
+}
+
+#catalog article button {
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#catalog img {
+    height: 200px;
+    margin-top: 10px;
+}
+
+#avantaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px #00000025;
+    border-radius: 20px;
+    margin: 50px;
+}
+
+#avantaje h2 {
+    font-size: 35px;
+    margin: 50px 0px 20px 0px;
+}
+
+#avantaje ul {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+#recenzii {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px #00000025;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+#recenzii h2 {
+    font-size: 35px;
+    margin: 50px 0px 20px 0px;
+}
+
+#recenzii article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 250px;
+    margin: 30px;
+    font-size: 25px;
+}
+
+#recenzii p {
+    font-weight: 500;
+} 
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px #00000025;
+    margin: 50px;
+    border-radius: 20px;
+}
+
+#contact h2 {
+    font-size: 35px;
+    margin: 50px 0px 20px 0px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#contact input {
+    padding: 5px;
+    width: 200px;
+}
+
+#contact select {
+    padding: 5px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#contact button {
+    padding: 10px 50px;
+    margin-bottom: 30px;
+    border: none;
+    font-size: 20px;
+    background-color: white;
+    box-shadow: 0 5px 10px #00000025;
+    border-radius: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    margin: 10px;
+}
+
+@media (min-width: 768px) {
+    header {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #recenzii div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 900px;
+    }
+    #avantaje ul {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1280px) {
+    #catalog div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        gap: 50px;
+        width: 80%;
+    }
+}
